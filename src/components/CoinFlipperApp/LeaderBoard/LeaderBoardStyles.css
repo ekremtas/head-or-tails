@@ -1,0 +1,129 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+.table {
+  display: table;
+  width: 100%;
+  position: absolute;
+  height: 25%;
+}
+.table-cell {
+  display: table-cell;
+  vertical-align: middle;
+}
+#decoration, #decoration2, #decoration3 {
+  position: absolute;
+  background-color: yellow;
+  width: 420px;
+  height: 70px;
+  opacity: 0;
+  border-radius: 10px;
+}
+#decoration2 {
+  background-color: magenta;
+}
+#decoration3 {
+  background-color: cyan;
+}
+.leader {
+  list-style-type: none;
+  padding: 0;
+  margin: 0 auto;
+  width: 420px;
+  height: 390px;
+}
+.leader li {
+  background-color: #fff;
+  border-radius: 5px;
+  height: 70px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.1);
+}
+.leader li .list_num {
+  float: left;
+  line-height: 40px;
+  font-size: 18px;
+  color: rgba(0, 0, 0, 0.65);
+  margin: 15px;
+  font-weight: bold;
+  width: 20px;
+  text-align: right;
+  margin-left: 10px;
+}
+.leader li h2 {
+  display: block;
+  margin: 0;
+  font-size: 18px;
+  line-height: 40px;
+  font-weight: 300;
+  margin-top: 15px;
+  padding-right: 20px;
+}
+.leader li h2 .number {
+  float: right;
+  font-weight: bold;
+  color: rgba(0, 0, 0, 0.65);
+  transition: color 0.3s;
+}
+.leader li img {
+  width: 40px;
+  height: 40px;
+  float: left;
+  margin: 15px 20px;
+  margin-left: 0;
+  border-radius: 100%;
+}
+
+.leader li h1 {
+  display: block;
+  margin: 0;
+  font-size: 25px;
+  line-height: 40px;
+  font-weight: 300;
+  margin-top: 15px;
+  padding-right: 20px;
+  font-weight: bold;
+
+}
+
+/* Loading Effect */
+.sh {
+  font-size: 20px;
+}
+.sh [class^='sh'] {
+  background-color: #ccc;
+  margin: 0.5em;
+  animation: glowing 2s infinite;
+}
+.sh-line {
+  display: flex;
+  height: 0.55em;
+  border-radius: 3px;
+}
+.sh-line.small {
+  height: 0.4em;
+}
+.sh-line.medium {
+  height: 0.7em;
+}
+.sh-line.w25 {
+  max-width: 25%;
+}
+.sh-line.w50 {
+  max-width: 50%;
+}
+.sh-line.w75 {
+  max-width: 75%;
+}
+.sh-line.rounded {
+  border-radius: 3em;
+}
+@keyframes glowing {
+  0%, 100% {
+    opacity: 1;
+ }
+  30%, 60% {
+    opacity: 0.75;
+ }
+}

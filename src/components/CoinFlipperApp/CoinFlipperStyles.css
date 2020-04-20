@@ -1,0 +1,86 @@
+body,
+html {
+  background-color: #1ebbd7;
+}
+.CoinFlipper button {
+  border: none;
+  outline: none;
+  color: black;
+  padding: 0.6em;
+  font-size: 1em;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 20px 20px 20px 20px;
+}
+
+.CoinFlipper button:hover {
+  background: black;
+  color: white;
+}
+
+.CoinFlipper button:disabled {
+  cursor: not-allowed;
+  background: #d9d7de;
+  pointer-events: none;
+}
+
+.CoinFlipper-number {
+  font-weight: bold;
+}
+
+.lds-ellipsis {
+  display: inline-block;
+  position: relative;
+  width: 0.8em;
+  height: 0.6em;
+}
+.lds-ellipsis div {
+  position: absolute;
+  top: 0.4em;
+  width: 0.25em;
+  height: 0.25em;
+  border-radius: 50%;
+  background: #4b4a4a;
+  animation-timing-function: cubic-bezier(0, 1, 1, 0);
+}
+.lds-ellipsis div:nth-child(1) {
+  left: 0em;
+  animation: lds-ellipsis1 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(2) {
+  left: 0em;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(3) {
+  left: 0.4em;
+  animation: lds-ellipsis2 0.6s infinite;
+}
+.lds-ellipsis div:nth-child(4) {
+  left: 0.8em;
+  animation: lds-ellipsis3 0.6s infinite;
+}
+@keyframes lds-ellipsis1 {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes lds-ellipsis3 {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(0);
+  }
+}
+@keyframes lds-ellipsis2 {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(0.4em, 0);
+  }
+}
